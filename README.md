@@ -1,7 +1,7 @@
 # BDL currencies
 
 ## Description
-This tool fetches the currencies from <ins>BDL.dz</ins> and returns them.
+This tool fetches the currencies from <ins>[bdl.dz](bdl.dz)</ins> and returns them.
 
 Currencies fetched are : 
 
@@ -34,12 +34,12 @@ git clone https://github.com/Sko-P/BDL-currencies
 from bdl import bdl
 ```
 2. Copy the path to your Webdriver in the *webdriver_* variable and  Instantiate your bdl object and call the main
-   ```bash
-    username = "machine" #your username here
-    webdriver_ = f'C:\\Users\\{username}\\Downloads\\chromedriver_win32\\chromedriver'.format(username) 
-    a = bdl(webdriver_) #Pass the webdriver
-    currencies = a.main() #returns an array of currencies
-   ```
+```bash
+username = "machine" #your username here
+webdriver_ = f'C:\\Users\\{username}\\Downloads\\chromedriver_win32\\chromedriver'.format(username) 
+a = bdl(webdriver_) #Pass the webdriver
+currencies = a.main() #returns an array of currencies
+```
 Calling the main returns an array of currencies (See Demonstration section below for an exemple)
 
 ## Demonstration
@@ -59,7 +59,7 @@ print(a.main())
 This solution is **NOT** provided by BDL nor one of its employees.
 
 # Contribution
-If the solution gets you an error, returns you nothing or gives you  incorrect results, this means the structure of bdl.dz has <ins>changed</ins>.  
+If the solution gets you an error, returns you nothing or gives you  incorrect results, this means the structure of [bdl.dz](bdl.dz) has <ins>changed</ins>.  
 Feel free to raise an issue or make a pull request to fix that.
 # Contact
 email : kmedelbachir@gmail.com
