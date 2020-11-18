@@ -3,6 +3,8 @@
 ## Description
 This tool fetches the currencies from <ins>[bdl.dz](bdl.dz)</ins> and returns them.
 
+![bdllogo](https://www.bdl.dz/Algerie/arabe/img/logo/logo.png)
+
 Currencies fetched are : 
 
 * EUR (EURO)
