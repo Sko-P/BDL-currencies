@@ -3,7 +3,7 @@
 ## Description
 This tool fetches the currencies from <ins>[bdl.dz](bdl.dz)</ins> and returns them.
 
-![bdllogo](https://www.bdl.dz/Algerie/arabe/img/logo/logo.png)
+![bdllogo](https://i.ibb.co/vZ9jLZB/t-l-chargement.png)
 
 Currencies fetched are : 
 
