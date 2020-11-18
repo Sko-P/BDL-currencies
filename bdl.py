@@ -4,9 +4,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
 
-class emploitic:
-    def __init__(self):
-        self.browser = webdriver.Chrome('C:\\Users\\pc1\\Downloads\\chromedriver_win32\\chromedriver')
+class bdl:
+    def __init__(self,webd):
+        self.browser = webdriver.Chrome(webd)
         self.browser.get('https://www.bdl.dz/Algerie/index1.htm')
         self.usd = ""
         self.eur = ""
@@ -20,7 +20,7 @@ class emploitic:
         string2 = "Cours de principales monnaies: "
         a = elem.text.replace(string,'')
         a = a.replace(string2, '')
-        print(a)
+        #print(a)
         self.format_(a)
     
     def format_(self, a):
@@ -44,30 +44,29 @@ class emploitic:
                 str_ += i
                 
             else:
-                print(str_)
                 if(case == 0):
                     self.usd = str(str_)
-                    print(self.usd)
+                    #print(self.usd)
                     self.curre.append(self.usd)
                     str_ = ""
                     case += 1
                 else:
                     if(case == 1):
                         self.eur = str(str_)
-                        print(self.eur)
+                        #print(self.eur)
                         self.curre.append(self.eur)
                         str_ = ""
                         case +=1
                     else:
                         if(case == 2):
                             self.gbp = str(str_)
-                            print(self.gbp)
+                            #print(self.gbp)
                             self.curre.append(self.gbp)
                             str_ = ""
                             case +=1
                         else:
                             self.jpy = str(str_)
-                            print(self.jpy)
+                            #print(self.jpy)
                             self.curre.append(self.jpy)
                             
 
@@ -80,40 +79,13 @@ class emploitic:
         return self.curre
        
 
-
+'''
+#EXEMPLE
 
 if __name__ == "__main__":
-   
-    a = emploitic()
+    username = "machine" #your username here or you can directly put the path in webdriver_
+    webdriver_ = f'C:\\Users\\{username}\\Downloads\\chromedriver_win32\\chromedriver'.format(username) 
+    a = bdl(webdriver_)
     print(a.main())
-    
-   
-    #element = WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.,"_eYtD2XCVieq6emjKBH3m")))
-    
-    
-    
-    
 
-    
-    
-    #posts = element.find_elements_by_class_name("rpBJOHq2PR60pnwJlUyP0")
-    #print(posts)
-    #for post in posts:
-            
-    #elem = browser.find_elements_("result-list-style")
-    #_eYtD2XCVieq6emjKBH3m
-    #print(element.)
-  
-    #browser.quit()
-    
-    
-
-
-'''
- headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'}
-    r = requests.get("https://www.emploitic.com/offres-d-emploi?t[0]=location-6&q=python",headers=headers)
-    print(r.content)
-    soup = bs(r.content,features="html.parser")
-    p =  soup.find("div")
-    print(p)
 '''
