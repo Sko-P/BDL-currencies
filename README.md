@@ -35,7 +35,7 @@ git clone https://github.com/Sko-P/BDL-currencies
 ```python
 from bdl import bdl
 ```
-2. Copy the path to your Webdriver in the *webdriver_* variable and  Instantiate your bdl object and call the main
+2. Copy the path to your Webdriver in the *webdriver_* variable and  Instantiate your bdl object and call its main
 ```bash
 username = "machine" #your username here
 webdriver_ = f'C:\\Users\\{username}\\Downloads\\chromedriver_win32\\chromedriver'.format(username) 
