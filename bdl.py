@@ -24,11 +24,12 @@ class emploitic:
         self.format_(a)
     
     def format_(self, a):
+        a = a+"-"
         str_ = ""
         j = 1
         case = 0
         for i in a:
-            if(i != "-"):
+            if(i != "-" and a.index(i) != len(a) - 1):
                 if(i == " "):
                     if(j == 3):
                         j = j + 1
@@ -43,6 +44,7 @@ class emploitic:
                 str_ += i
                 
             else:
+                print(str_)
                 if(case == 0):
                     self.usd = str(str_)
                     print(self.usd)
